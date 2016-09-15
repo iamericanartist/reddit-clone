@@ -1,0 +1,21 @@
+{
+  "name": "reddit-clone",
+  "description": "Team BackBreakers / Reddit Clone",
+  "main": "index.js",
+  "authors": [
+    "Eric Denton <eric@iamericanartist.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/iamericanartist/reddit-clone",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}
