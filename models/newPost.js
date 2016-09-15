@@ -19,6 +19,6 @@ module.exports = mongoose.model("New Post", {
     required: [true, "Please insert an image url"],
     match: [LINK_VALIDATION, "Please enter valid image url"]
   },
-  // vote: Number,
-  // score: Number,
+  vote: Number,
+  score: Number,
 })
