@@ -7,13 +7,13 @@ block content
     form(method='POST')
       .form-group
         label(for='title') Title
-        input.form-control#title(type='text', name='title', placeholder='Cat saves dog from burning building!')
+        input.form-control#title(type='text', name='title', placeholder='Cat saves dog from burning building!' required)
       .form-group
-        label(for='url') URL
-        input.form-control#url(type='url', name='url', placeholder='www.google.com')
+        label(for='link') URL
+        input.form-control#link(type='url', name='link', placeholder='www.google.com' required)
       .form-group
         label(for='image') Image
-        input.form-control#image(type='url', name='image', placeholder='http://photos1.blogger.com/blogger/5977/1136/1600/punksquirrel1.jpg')
+        input.form-control#image(type='url', name='image', placeholder='http://photos1.blogger.com/blogger/5977/1136/1600/punksquirrel1.jpg' required)
       .contact-form__submit
         a.btn.btn-danger.btn-lg(href='/') Cancel
         input.btn.btn-success.btn-lg(type='submit' value='Submit')
