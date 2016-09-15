@@ -1,0 +1,7 @@
+body {
+  background-color: red;
+  text-align: center;
+}
+.heading, .welcome {
+  margin-top: 70px;
+}
