@@ -5,3 +5,45 @@ body {
 .heading, .welcome {
   margin-top: 70px;
 }
+
+.votebutton {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.glyphicon {
+  display: block;
+  font-size: 4rem;
+}
+
+.story {
+  margin: 2rem 0;
+}
+
+.story--div {
+  width: 200px;
+  height: 120px;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.title {
+  display: inline-block;
+}
+
+.title > a {
+  font-size: 2rem;
+  margin: 0 1rem;
+  word-wrap: break-word;
+}
+
+.story--div > img {
+  width: 100%;
+  height: auto;
+}
+
+.upvote {
+  display: inline-block;
+  font-size: 2rem;
+  width: 2rem;
+}
