@@ -6,8 +6,8 @@ block content
       h1 Welcome to BackBreakers Reddit Page
     each newPost in returnedData
       form(method="post")
-        .story.row
-          div.story--div.col-sm-2
+        .newPost.row
+          div.newPost--div.col-sm-2
             img(src=newPost.image)
           .title.col-sm-7
             a(href=newPost.url) #{newPost.title}

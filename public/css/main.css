@@ -20,7 +20,7 @@ body {
   margin: 2rem 0;
 }
 
-.story--div {
+.newPost--div {
   width: 200px;
   height: 120px;
   display: inline-block;
@@ -37,7 +37,7 @@ body {
   word-wrap: break-word;
 }
 
-.story--div > img {
+.newPost--div > img {
   width: 100%;
   height: auto;
 }
