@@ -1,29 +1,25 @@
 'use strict'
 
 const { Router } = require('express')
+
 const router = Router()
 
-const newPost = require('../models/newPost')
+// public routes
+router.use(require('./login'))
+router.use(require('./register'))
+router.use(require('./root'))
 
-router.get('/', (req, res) => {
-  newPost
-  .find()
-  .then((returnedData) => {
-  // const returnedData = newPost.find({ title: / /}, {"title": "/ /", "link": "/ /", "image": "/ /", _id: 0 })
-  // .then((returnedData) => console.log("returned data from above: ", returnedData))
-    res.render('index', {returnedData})
-  })
+// login guard middleware
+router.use((req, res, next) => {
+  if (req.isAuthenticated()) {
+    next()
+  } else {
+    res.redirect('/login')
+  }
 })
 
-router.get('/newPost', (req, res) =>
-  res.render('newPost', { page: 'New Post'})
-)
-
-router.post('/newPost', (req, res, err) =>
-  newPost
-    .create(req.body)
-    .then(() => res.redirect('/'))
-    .catch(err)
-)
+// private routes
+router.use(require('./logout'))
+router.use(require('./newPost'))
 
 module.exports = router
